@@ -54,26 +54,32 @@ color:white;
 </div>
 
 <div style="border:2px solid black;width:420px;height:360px;position:relative;top:-350px;left:420px;">
+
+<form action="insert2.php" method="POST" >
 <div id="but1" style="background-color:green;line-height: 50px; height:350px;width:410px;position:relative;top: 5px;left:5px;overflow: visible;">
-<b style="position:relative;top: 80px;left:80px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
-<b style="position:relative;top: 100px;left:80px;">Password: </b><input type="password" placeholder="Password" style="position:relative;top: 100px;left:80px;">
+<b style="position:relative;top: 80px;left:80px;"> Username: </b><input type="text" placeholder="Username" name="username" style="position:relative;top: 80px;left:80px;"><br>
+<b style="position:relative;top: 100px;left:80px;">Password: </b><input type="password" placeholder="Password" name="password" style="position:relative;top: 100px;left:80px;">
 <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 160px;left:-60px;"><b>Sign In</b></button>
 </div>
+</form>
 
-<div id="but2" style="background-color:lightgreen;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
+<div id="but2" style="background-color:lightgreen;line-height: 50px; height:350px;width:410px;position:relative;top:-360px;left:2px;display:none;">
   <b style="position:relative;top: 80px;left:80px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
   <b style="position:relative;top: 100px;left:80px;">Password: </b><input type="password" placeholder="Password" style="position:relative;top: 100px;left:80px;">
   <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 160px;left:-60px;"><b>Unlock User</b></button>
 </div>
 
-<div id="but3" style="background-color:rgb(69, 235, 69);line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
-  <b style="position:relative;top: 80px;left:25px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
-  <b style="position:relative;top: 100px;left:25px;">Enter your mailId: </b><input type="text" placeholder="abc@gmail.com" style="position:relative;top: 100px;left:25px;">
+<form action="insert3.php" method="POST">
+<div id="but3" style="background-color:rgb(69, 235, 69);line-height: 50px; height:350px;width:410px;position:relative;top:-360px;left:2px;display:none;">
+  <b style="position:relative;top: 80px;left:25px;"> Username: </b><input type="text" name="username" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
+  <b style="position:relative;top: 100px;left:25px;">Enter your mailId: </b><input type="email" name="email" placeholder="abc@gmail.com" style="position:relative;top: 100px;left:25px;">
   <button style=" width: 160px;height:30px;background-color:tomato; position:relative;top: 120px;left:160px;"><b>Forgot password?</b></button>
 </div>
-<form action="file:///C:/wamp64/www/localhost/insert.php" method="POST">
-<div id="but4" style="background-color:orange;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
-  <b style="position:relative;top: 0px;left:80px;"> Firstname: </b><input type="text" placeholder="Firstname" name="username" style="position:relative;top: 0px;left:80px;" required><br>
+</form>
+
+<form action="insert.php" method="POST">
+<div id="but4" style="background-color:orange;line-height: 50px; height:350px;width:410px;position:relative;top:-360px;left:2px;display:none;">
+  <b style="position:relative;top: 0px;left:80px;"> Firstname: </b><input type="text" placeholder="Firstname" name="firstname" style="position:relative;top: 0px;left:80px;" required><br>
   <b style="position:relative;top: 5px;left:80px;"> Lastname: </b><input type="text" placeholder="Lastname" name="lastname" style="position:relative;top: 5px;left:80px;" required><br>
   <b style="position:relative;top: 5px;left:80px;">Login Id: </b><input type="text" placeholder="Userid" name="userid" style="position:relative;top: 5px;left:90px;" required><br>
   <b style="position:relative;top: 5px;left:80px;"> Password:</b><input type="password" placeholder="Password" name="password" style="position:relative;top: 5px;left:90px;" required><br>
@@ -83,19 +89,19 @@ color:white;
 </div>
 </form>
 
-<form>
-<div id="but5" style="background-color:red;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
-  <b style="position:relative;top: 5px;left:80px;"> Firstname: </b><input type="text" placeholder="Firstname" style="position:relative;top: 5px;left:80px;"><br>
-  <b style="position:relative;top: 5px;left:80px;"> Lastname: </b><input type="text" placeholder="Lastname" style="position:relative;top: 5px;left:80px;"><br>
-  <b style="position:relative;top: 5px;left:80px;">Login Id: </b><input type="text" placeholder="Userid" style="position:relative;top: 5px;left:90px;"><br>
-  <b style="position:relative;top: 5px;left:80px;"> Password:</b><input type="password" placeholder="Password" style="position:relative;top: 5px;left:90px;"><br>
-  <b style="position:relative;top: 5px;left:80px;"> MailId:</b><input type="email" placeholder="abc@gmail.com" style="position:relative;top: 5px;left:105px;"><br>
-  <b style="position:relative;top: 5px;left:80px;"> Mobile No:</b><input type="text" placeholder="0123456789" style="position:relative;top: 5px;left:85px;"><br>
+<form action="insert1.php" method="POST">
+<div id="but5" style="background-color:red;line-height: 50px; height:350px;width:410px;position:relative;top:-360px;left:2px;display:none;">
+  <b style="position:relative;top: 5px;left:80px;"> Firstname: </b><input type="text" placeholder="Firstname" name="firstname" style="position:relative;top: 5px;left:80px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> Lastname: </b><input type="text" placeholder="Lastname" name="lastname" style="position:relative;top: 5px;left:80px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;">Login Id: </b><input type="text" placeholder="Userid" name="userid" style="position:relative;top: 5px;left:90px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> Password:</b><input type="password" placeholder="Password" name="password" style="position:relative;top: 5px;left:90px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> MailId:</b><input type="email" placeholder="abc@gmail.com" name="email" style="position:relative;top: 5px;left:105px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> Mobile No:</b><input type="text" placeholder="0123456789" name="mobileno" style="position:relative;top: 5px;left:85px;" required><br>
   <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 20px;left:170px;"><b>Register</b></button>
 </div>
 </form>
 
-<div id="but6" style="background-color:tomato;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
+<div id="but6" style="background-color:tomato;line-height: 50px; height:350px;width:410px;position:relative;top:-360px;left:2px;display:none;">
   <b style="position:relative;top: 80px;left:80px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
   <b style="position:relative;top: 100px;left:80px;">Password: </b><input type="password" placeholder="Password" style="position:relative;top: 100px;left:80px;">
   <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 160px;left:-60px;"><b>Register</b></button>
