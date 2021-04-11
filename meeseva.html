@@ -1,0 +1,272 @@
+<html>
+<head>
+<style>
+body{
+  background-color:lightgrey;
+  
+}
+
+.head
+{
+  border: 2px solid black;
+height:100px;
+width: 1520px;
+text-align: center;
+color:white;
+background-color: green;
+line-height: 10px;
+}
+.buttons
+{
+  border:2px solid black;
+  height:358px;
+  width:400px;
+  position: relative;
+  top:10px;
+  margin-left: 10px;
+}
+
+footer
+{
+background-color:black;
+height:300px;
+color:white;
+
+}
+
+</style>
+</head>
+<body>
+<div class="head">
+<img style="position:relative;top:10px;left:-700px;width:100px;height:80px;" src="meeseva2.jpg"/>
+<h1 style="position:relative; top:-80px;font-size: 50px;">MeeSeva Online Portal</h1>
+<h3 style="position:relative; top:-80px;">Government of Andhra Pradesh</h3>
+<img style="position:relative;width:100px;top:-175px;right:10px;height:80px;float: right;" src="meeseva1.jpg"/>
+</div>
+<div style="background-color: white;margin-left: 100px;margin-right: 100px;height:900px;">
+<div class="buttons">
+<button  onclick="but1()" style="width:400px;height:60px;background-color:green;"><img style="width:50px;height:55px;position:relative;left:-120px;"src="icon1.png"/><b style="position:relative;left:-110px;top:-20px;font-size:20px;">User Login</b></button>
+<button onclick="but2()" style=" width:400px;height:60px;background-color:lightgreen;"><img style="width:50px;height:55px;position:relative;left:-115px;"src="icon4.png"/><b style="position:relative;left:-110px;top:-20px;font-size:20px;">Unlock user</b></button>
+<button onclick="but3()" style=" width:400px;height:60px; background-color:  rgb(69, 235, 69);"><img style="width:50px;height:55px;position:relative;left:-90px;"src="icon3.png"/><b style="position:relative;left:-85px;top:-20px;font-size:20px;">Forgot Password</b></button>
+<button onclick="but4()" style=" width:400px;height:60px;background-color:orange;"><img style="width:50px;height:55px;position:relative;left:-92px;"src="icon2.png"/><b style="position:relative;left:-85px;top:-20px;font-size:20px;">New Registration</b></button>
+<button onclick="but5()" style=" width:400px;height:60px;background-color:red;"><img style="width:50px;height:55px;position:relative;left:-35px;"src="icon2.png"/><b style="position:relative;left:-25px;top:-20px;font-size:20px;">IT &C Incentives Registration</b></button>
+<button onclick="but6()" style=" width:400px;height:60px;background-color:tomato;"><img style="width:50px;height:55px;position:relative;left:-25px;"src="icon2.png"/><b style="position:relative;left:-15px;top:-20px;font-size:20px;">IT &C Policy 14-20 User Manual</b></button>
+</div>
+
+<div style="border:2px solid black;width:420px;height:360px;position:relative;top:-350px;left:420px;">
+<div id="but1" style="background-color:green;line-height: 50px; height:350px;width:410px;position:relative;top: 5px;left:5px;overflow: visible;">
+<b style="position:relative;top: 80px;left:80px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
+<b style="position:relative;top: 100px;left:80px;">Password: </b><input type="password" placeholder="Password" style="position:relative;top: 100px;left:80px;">
+<button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 160px;left:-60px;"><b>Sign In</b></button>
+</div>
+
+<div id="but2" style="background-color:lightgreen;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
+  <b style="position:relative;top: 80px;left:80px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
+  <b style="position:relative;top: 100px;left:80px;">Password: </b><input type="password" placeholder="Password" style="position:relative;top: 100px;left:80px;">
+  <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 160px;left:-60px;"><b>Unlock User</b></button>
+</div>
+
+<div id="but3" style="background-color:rgb(69, 235, 69);line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
+  <b style="position:relative;top: 80px;left:25px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
+  <b style="position:relative;top: 100px;left:25px;">Enter your mailId: </b><input type="text" placeholder="abc@gmail.com" style="position:relative;top: 100px;left:25px;">
+  <button style=" width: 160px;height:30px;background-color:tomato; position:relative;top: 120px;left:160px;"><b>Forgot password?</b></button>
+</div>
+<form action="file:///C:/wamp64/www/localhost/insert.php" method="POST">
+<div id="but4" style="background-color:orange;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
+  <b style="position:relative;top: 0px;left:80px;"> Firstname: </b><input type="text" placeholder="Firstname" name="username" style="position:relative;top: 0px;left:80px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> Lastname: </b><input type="text" placeholder="Lastname" name="lastname" style="position:relative;top: 5px;left:80px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;">Login Id: </b><input type="text" placeholder="Userid" name="userid" style="position:relative;top: 5px;left:90px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> Password:</b><input type="password" placeholder="Password" name="password" style="position:relative;top: 5px;left:90px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> MailId:</b><input type="email" placeholder="abc@gmail.com" name="email" style="position:relative;top: 5px;left:105px;" required><br>
+  <b style="position:relative;top: 5px;left:80px;"> Mobile No:</b><input type="text" placeholder="0123456789" name="mobileno" style="position:relative;top: 5px;left:85px;" required><br>
+  <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 20px;left:170px;"><b>Register</b></button>
+</div>
+</form>
+
+<form>
+<div id="but5" style="background-color:red;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
+  <b style="position:relative;top: 5px;left:80px;"> Firstname: </b><input type="text" placeholder="Firstname" style="position:relative;top: 5px;left:80px;"><br>
+  <b style="position:relative;top: 5px;left:80px;"> Lastname: </b><input type="text" placeholder="Lastname" style="position:relative;top: 5px;left:80px;"><br>
+  <b style="position:relative;top: 5px;left:80px;">Login Id: </b><input type="text" placeholder="Userid" style="position:relative;top: 5px;left:90px;"><br>
+  <b style="position:relative;top: 5px;left:80px;"> Password:</b><input type="password" placeholder="Password" style="position:relative;top: 5px;left:90px;"><br>
+  <b style="position:relative;top: 5px;left:80px;"> MailId:</b><input type="email" placeholder="abc@gmail.com" style="position:relative;top: 5px;left:105px;"><br>
+  <b style="position:relative;top: 5px;left:80px;"> Mobile No:</b><input type="text" placeholder="0123456789" style="position:relative;top: 5px;left:85px;"><br>
+  <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 20px;left:170px;"><b>Register</b></button>
+</div>
+</form>
+
+<div id="but6" style="background-color:tomato;line-height: 50px; height:350px;width:410px;position:relative;top:-345px;left:2px;display:none;">
+  <b style="position:relative;top: 80px;left:80px;"> Username: </b><input type="text" placeholder="Username" style="position:relative;top: 80px;left:80px;"><br>
+  <b style="position:relative;top: 100px;left:80px;">Password: </b><input type="password" placeholder="Password" style="position:relative;top: 100px;left:80px;">
+  <button style=" width:100px;height:30px;background-color:tomato; position:relative;top: 160px;left:-60px;"><b>Register</b></button>
+</div>
+</div>
+
+<div style="border:5px solid rgb(190, 76, 76);width:400px;height:360px; position:relative;top:-715px;left:860px;">
+  <img style="width:395px;height:355px;" src="states1.PNG"/>
+</div>
+
+<img style="width:500px;height:400px; position:relative;bottom:640px;left:20px;" src="meeseva3.jpg"/>
+<img style="width:700px;height:400px; position: relative;bottom:640px;left:30px;" src="meeseva4.jpg"/>
+
+</div>
+
+<script>
+  var a=0,b=0,c=0,d=0,e=0,e=0,f=5;
+  function but1()
+{
+  if(a==1)
+   {
+      document.getElementById("but1").style.display="none"; 
+      return a=0;
+    
+   }
+
+   else
+    {
+      document.getElementById("but1").style.display="block";
+      return a=1;
+  }
+
+}
+
+function but2()
+{
+  if(b==1)
+   {
+      document.getElementById("but2").style.display="none"; 
+      return b=0;
+    
+   }
+
+   else
+    {
+      document.getElementById("but2").style.display="block";
+      return b=1;
+  }
+
+}
+
+function but3()
+{
+  if(c==1)
+   {
+      document.getElementById("but3").style.display="none"; 
+      return c=0;
+    
+   }
+
+   else
+    {
+      document.getElementById("but3").style.display="block";
+      return c=1;
+  }
+
+}
+
+function but4()
+{
+  if(d==1)
+   {
+      document.getElementById("but4").style.display="none"; 
+      return d=0;
+    
+   }
+
+   else
+    {
+      document.getElementById("but4").style.display="block";
+      return d=1;
+  }
+
+}
+
+function but5()
+{
+  if(e==1)
+   {
+      document.getElementById("but5").style.display="none"; 
+      return e=0;
+    
+   }
+
+   else
+    {
+      document.getElementById("but5").style.display="block";
+      return e=1;
+  }
+
+}
+
+function but6()
+{
+  if(f==1)
+   {
+      document.getElementById("but6").style.display="none"; 
+      return f=0;
+    
+   }
+
+   else
+    {
+      document.getElementById("but6").style.display="block";
+      return f=1;
+  }
+
+}
+</script>
+
+<footer>
+ 
+  <div style="line-height:20px; padding-left:20px;position:relative;top:50px;">
+  <b>Home</b><br>
+  Site Map<br>
+  <b>contact us</b><br>
+  </div>
+  
+  <div style="line-height:30px; padding-left:10px; position:relative;left:300px;top:-15px;">
+  <b>Directories</b><br>
+  District Web Directory<br>
+  Other State Web Directory<br>
+  Universities<br>
+  Other Important Links<br>
+  </div>
+  
+  
+  <div style="line-height:30px; padding-left:10px; position:relative;left:550px;top:-165px;">
+  <b>Executive</b><br>
+  Council of Ministers<br>
+  Chief Minister Office<br>
+  </div>
+  
+  <div style="line-height:30px; padding-left:10px; position:relative;left:820px;top:-255px;">
+  <b>Legislature</b><br>
+  AP Legislative Council<br>
+  AP Legislative Assembly<br>
+  </div>
+  
+  <div style="line-height:30px; padding-left:10px; position:relative;left:1150px;top:-340px;">
+  <b>Emergency Contacts</b><br>
+  Police --------100<br>
+  Blood Bank -------- 040 23221748 (HYD)<br>
+  Blood Bank --------0866 - 2452244 (VJA)<br>
+  Ambulance -------- 108<br>
+  Fire Services-------- 101<br>
+  </div>
+  
+  <div style="background-color:rgb(90,90,90);height:68px;position:relative;top:-345px;">
+  <p style="position:relative;top:20px;left:50px;">Copyright Policy   &nbsp;&nbsp;&nbsp; | &nbsp;   Privacy Policy &nbsp;   |&nbsp;    Hyperlinking Policy   &nbsp; |   &nbsp; Terms of Use&nbsp; </p>   
+  <p style="position:relative;top:-15px;left:900px;">© 2021, Government of AP | Designed & Developed by RRR Solutions Pvt Ltd.</p> 
+  </div>
+  
+  <div style="background-color:rgb(60,60,60);height:50px;position:relative;top:-650px;">
+  <b style="position:relative;left:20px;top:15px;">67899818 &nbsp;Visits</b> 
+  <div style="position:relative;left:1300px;top:-10px;">
+  <a href="https://www.facebook.com/AndhraPradeshCM?fref=ts"><img  src="facebook.png" style="width:30px;height:30px;"/></a>
+  <a href="https://twitter.com/AndhraPradeshCM"><img  src="twitter.png" style="width:30px;height:30px;"/></a>
+  <a href="https://plus.google.com/109837810845948797989"><img  src="googleplus.png" style="width:30px;height:30px;"/></a>
+  </div>
+  <div>
+  </footer>
+</body>
+</html>
